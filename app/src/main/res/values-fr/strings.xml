@@ -6,4 +6,5 @@
     <string name="female">femelle</string>
     <string name="count">compter</string>
     <string name="toast">pain grillé</string>
+    <string name="enter_time_in_seconds">entrer le temps en secondes</string>
 </resources>

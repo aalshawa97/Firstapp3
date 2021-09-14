@@ -6,4 +6,5 @@
     <string name="female">امرأة</string>
     <string name="count">توقيت مجموعة</string>
     <string name="toast">خبز محمص</string>
+    <string name="enter_time_in_seconds">أدخل الوقت بالثواني</string>
 </resources>

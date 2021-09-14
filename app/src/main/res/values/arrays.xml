@@ -8,4 +8,17 @@
         <item>USA</item>
         <item>France</item>
     </string-array>
+
+    <string-array name="programming_languages">
+        <item>C++</item>
+        <item>C#</item>
+        <item>Kotlin</item>
+        <item>JavaScript</item>
+    </string-array>
+    <string-array name="description">
+        <item>C++ is a cross-platform language that can be used to create high-performance applications.</item>
+        <item>C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language.</item>
+        <item>Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference.</item>
+        <item>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming language with first-class functions.</item>
+    </string-array>
 </resources>
