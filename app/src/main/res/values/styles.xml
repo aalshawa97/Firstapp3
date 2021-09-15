@@ -12,6 +12,12 @@
         </item>
     </style>
 
+    <style name="logo_font_style">
+        <item name="android:background">@android:color/holo_blue_light</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
     <style name="AlertDialogCustomStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
         <item name="android:background">@color/alertDialogMainMathAlarmBackgroundColor</item>
         <item name="android:textColorAlertDialogListItem">@color/white</item>

@@ -3,9 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/drawable/btn_selector.xml" value="0.1" />
+        <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/drawable/button_disabled.xml" value="0.1" />
+        <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/drawable/button_enabled.xml" value="0.1" />
+        <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/drawable/button_focused.xml" value="0.1" />
+        <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/drawable/button_pressed.xml" value="0.1" />
+        <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/drawable/ic_baseline_home_24.xml" value="0.1" />
         <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/drawable/rectangle.xml" value="0.1" />
         <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/layout/activity_alarm.xml" value="0.15052083333333333" />
-        <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/layout/activity_async.xml" value="0.1" />
+        <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/layout/activity_async.xml" value="0.264" />
         <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/layout/activity_bottom_navigation.xml" value="0.1" />
         <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/layout/activity_calculator.xml" value="0.20364583333333333" />
         <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/layout/activity_contact.xml" value="0.2" />
@@ -15,9 +21,11 @@
         <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/layout/activity_main_alarm.xml" value="0.264" />
         <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/layout/activity_recycler.xml" value="0.1" />
         <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/layout/content_navigation.xml" value="0.234375" />
+        <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/layout/deploymenttargetdropdown.xml" value="0.13958333333333334" />
         <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
         <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/layout/fragment_home.xml" value="0.234375" />
         <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/layout/logged_in.xml" value="0.1537037037037037" />
+        <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/layout/recycler_view_row.xml" value="0.14270833333333333" />
         <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/layout/row_recycler_view.xml" value="0.15648148148148147" />
         <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/menu/activity_main_drawer.xml" value="0.234375" />
         <entry key="..\:/Users/15039/AndroidStudioProjects/Firstapp/app/src/main/res/menu/home_menu.xml" value="0.1859375" />

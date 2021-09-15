@@ -2,12 +2,22 @@ package com.abdul.firstapp
 
 import android.os.Bundle
 import android.os.PersistableBundle
+import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class RecyclerActivity : AppCompatActivity() {
+
+    /*
+    inner class ItemClickListener {
+        fun onItemClick(view: View, position: Int) {
+            startActivityFromFragmentForResult<SelectExerciseActivity>(SELECT_EXERCISES)
+        }
+    }
+    */
+    lateinit var myAdapter : ViewHolder
     lateinit var wordsRecyclerView : RecyclerView
     var words = arrayOf("first", "second", "third")
     val s1 = arrayOfNulls<String>(10)
@@ -18,6 +28,8 @@ class RecyclerActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState, persistentState)
         wordsRecyclerView = findViewById(R.id.wordsRecyclerview)
         wordsRecyclerView.layoutManager = LinearLayoutManager(this)
+        //myAdapter.setClickListener(itemClickListener());
+        wordsRecyclerView.setAdapter(myAdapter);
     }
     /*
     public Holder(View itemView) {
@@ -37,4 +49,8 @@ class RecyclerActivity : AppCompatActivity() {
         });
     }
     */
+}
+
+private fun RecyclerView.setAdapter(myAdapter: ViewHolder) {
+
 }
