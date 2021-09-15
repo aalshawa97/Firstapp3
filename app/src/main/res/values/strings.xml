@@ -26,4 +26,5 @@
     <string name="count">set timer</string>
     <string name="toast">Toast</string>
     <string name="enter_time_in_seconds">enter time in seconds</string>
+    <string name="download_file_button">Download file</string>
 </resources>

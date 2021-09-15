@@ -10,6 +10,9 @@ import androidx.recyclerview.widget.RecyclerView
 class RecyclerActivity : AppCompatActivity() {
     lateinit var wordsRecyclerView : RecyclerView
     var words = arrayOf("first", "second", "third")
+    val s1 = arrayOfNulls<String>(10)
+    val s2 = arrayOfNulls<String>(10)
+    //val images[] = (R.id.drawable.c_plusplus, R.drawable)
 
     override fun onCreate(savedInstanceState: Bundle?, persistentState: PersistableBundle?) {
         super.onCreate(savedInstanceState, persistentState)
