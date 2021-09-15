@@ -17,7 +17,7 @@
         <item name="android:textSize">20sp</item>
         <item name="android:textStyle">bold</item>
     </style>
-    
+
     <style name="logo_font_style.red">
         <item name="android:background">@android:color/holo_orange_light</item>
     </style>
