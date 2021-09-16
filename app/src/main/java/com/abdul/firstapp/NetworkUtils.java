@@ -32,6 +32,10 @@ public class NetworkUtils {
                     .build();
             URL requestURL = new URL(builtURI.toString());
 
+            //            String weatherUrl = "https://api.openweathermap.org/data/2.5/weather?q="+bookName+"&appid=91666db73c1458dd9076532e1e5370e0";
+            //URL requestURL = new URL(weatherUrl);
+            //builtURI.toString());
+
             urlConnection = (HttpURLConnection) requestURL.openConnection();
             urlConnection.setRequestMethod("GET");//GET -- read db, POST -- write db, PUT -- update db, DELETE
             urlConnection.connect();

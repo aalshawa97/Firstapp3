@@ -4,7 +4,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 import android.os.AsyncTask;
 import android.widget.TextView;
-import org.w3c.dom.Text;
 
 //ip type is bookname-- string, op type is a jsonString
 
@@ -24,7 +23,13 @@ public class FetchBookTask extends AsyncTask<String,Void,String> {
     @Override
     protected void onPostExecute(String jsonString) {
         super.onPostExecute(jsonString);
+        if (parseBookData(jsonString)) return;
 
+        //parseWeatherData(jsonString);
+
+    }
+
+    private boolean parseBookData(String jsonString) {
         try {
             JSONObject rootJsonObject = new JSONObject(jsonString);
             JSONArray itemsArray = rootJsonObject.getJSONArray("items");
@@ -44,7 +49,7 @@ public class FetchBookTask extends AsyncTask<String,Void,String> {
                 if (title != null && authors != null) {
                     titleTv.setText(title);
                     authorTv.setText(authors);
-                    return;
+                    return true;
                 }
 
                 titleTv.setText("No Results Found");
@@ -55,6 +60,27 @@ public class FetchBookTask extends AsyncTask<String,Void,String> {
 
         } catch (JSONException e) {
             e.printStackTrace();
+        }
+        return false;
+    }
+
+    private void parseWeatherData(String jsonString) {
+        try {
+            JSONObject jsonObject = null;
+            try {
+                jsonObject = new JSONObject(jsonString);
+            } catch (JSONException jsonException) {
+                jsonException.printStackTrace();
+            }
+            JSONArray weatherJsonArray = jsonObject.getJSONArray("weather");
+          for(int i=0; i< weatherJsonArray.length();i++){
+              JSONObject mJsonObject = weatherJsonArray.getJSONObject(i);
+              String description = mJsonObject.getString("description");
+              authorTv.setText(description);
+          }
+
+            } catch (JSONException jsonException) {
+            jsonException.printStackTrace();
         }
     }
 }
