@@ -15,7 +15,12 @@ public class FetchBookTask extends AsyncTask<String,Void,String> {
     }
 
     @Override
-    protected String doInBackground(String... strings) {
-        return null;
+    protected String doInBackground(String... bookName) {
+        return NetworkUtils.getBookInfo(bookName[0]);
+    }
+
+    @Override
+    protected void onPostExecute(String jsonString) {
+        super.onPostExecute(jsonString);
     }
 }
