@@ -2,6 +2,7 @@ package com.abdul.firstapp
 
 import android.app.DatePickerDialog
 import android.app.TimePickerDialog
+import android.content.ContentValues.TAG
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +11,8 @@ import android.provider.MediaStore
 import android.util.Log
 import android.view.View
 import android.widget.*
+import com.google.firebase.ktx.Firebase
+import com.google.firebase.messaging.ktx.messaging
 import java.util.*
 
 class MainActivity : AppCompatActivity() {
@@ -41,8 +44,18 @@ class MainActivity : AppCompatActivity() {
             setAlarm()
         }
         */
-        // register the UI widgets with their appropriate IDs
-        // register the UI widgets with their appropriate IDs
+        //Register the UI widgets with their appropriate IDs
+        val tag = "Weather updates"
+        Firebase.messaging.subscribeToTopic("weather")
+            .addOnCompleteListener { task ->
+                var msg = getString(R.string.msg_subscribed)
+                if (!task.isSuccessful) {
+                    msg = getString(R.string.msg_subscribe_failed)
+                }
+                Log.d(tag, msg)
+                Toast.makeText(baseContext, msg, Toast.LENGTH_SHORT).show()
+            }
+
         BSelectImage = findViewById(R.id.BSelectImage)
         IVPreviewImage = findViewById(R.id.imageView)
 

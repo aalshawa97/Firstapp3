@@ -8,4 +8,7 @@
     <string name="toast">pain grillé</string>
     <string name="enter_time_in_seconds">entrer le temps en secondes</string>
     <string name="download_file_button">bouton de téléchargement de fichier</string>
+    <string name="instructions">instructions</string>
+    <string name="msg_subscribed">Vous êtes abonné pour recevoir des mises à jour météo!</string>
+    <string name="msg_subscribe_failed">Désolé, impossible de s\'abonner aux mises à jour météo. Veuillez vérifier auprès de votre administrateur !</string>
 </resources>

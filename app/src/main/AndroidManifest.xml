@@ -35,6 +35,13 @@
             </intent-filter>
         </service>
 
+        <service
+            android:name=".fcm.MyFirebaseInstanceIDService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+
         <receiver
             android:name=".SmsReceiver"
             android:enabled="true"
@@ -70,13 +77,13 @@
             android:name=".model.Calculator"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".books.BooksActivity"
             android:exported="true" />
         <activity
             android:name=".RecyclerActivity"
             android:exported="true" />
         <activity
-            android:name=".books.BooksActivity"
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

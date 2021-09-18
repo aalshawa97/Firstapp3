@@ -8,4 +8,8 @@
     <string name="toast">خبز محمص</string>
     <string name="enter_time_in_seconds">أدخل الوقت بالثواني</string>
     <string name="download_file_button">زر تنزيل الملف</string>
+    <string name="instructions">تعليمات</string>
+    <string name="msg_subscribed">أنت مشترك في الحصول على تحديثات الطقس!</string>
+    <string name="msg_subscribe_failed">
+آسف ، فشل الاشتراك في تحديثات الطقس. يرجى مراجعة المسؤول الخاص بك!</string>
 </resources>
