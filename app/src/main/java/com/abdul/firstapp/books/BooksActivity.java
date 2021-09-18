@@ -1,12 +1,14 @@
-package com.abdul.firstapp;
+package com.abdul.firstapp.books;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.os.AsyncTask;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import com.abdul.firstapp.R;
 
 public class BooksActivity extends AppCompatActivity {
     EditText mBookInput;
@@ -20,6 +22,9 @@ public class BooksActivity extends AppCompatActivity {
         mBookInput = findViewById(R.id.bookInput);
         mTitleText = findViewById(R.id.titleText);
         mAuthorText = findViewById(R.id.authorText);
+        String action = "ineed.water.todrink";
+        Intent wIntent = new Intent(action);
+        sendBroadcast(wIntent);
     }
 
 
