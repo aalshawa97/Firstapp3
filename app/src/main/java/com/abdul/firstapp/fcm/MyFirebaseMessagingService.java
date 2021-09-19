@@ -16,12 +16,16 @@ import androidx.work.WorkManager;
 
 import com.abdul.firstapp.MainActivity;
 import com.abdul.firstapp.R;
+import com.google.firebase.ktx.Firebase;
 import com.google.firebase.messaging.FirebaseMessagingService;
 import com.google.firebase.messaging.RemoteMessage;
 
-public class MyFirebaseMessagingService extends FirebaseMessagingService {
+public class MyFirebaseMessagingService<val> extends FirebaseMessagingService {
 
     private static final String TAG = "MyFirebaseMsgService";
+    // Access a Cloud Firestore instance from your Activity
+
+    //val db = Firebase.
 
     /**
      * Called when message is received.

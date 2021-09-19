@@ -77,13 +77,13 @@
             android:name=".model.Calculator"
             android:exported="true" />
         <activity
-            android:name=".books.BooksActivity"
+            android:name=".MainActivity"
             android:exported="true" />
         <activity
             android:name=".RecyclerActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".books.BooksActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

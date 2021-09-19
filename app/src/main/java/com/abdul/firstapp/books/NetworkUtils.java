@@ -30,8 +30,11 @@ public class NetworkUtils {
                     .appendQueryParameter(MAX_RESULTS, "3")
                     .appendQueryParameter(PRINT_TYPE, "books")
                     .build();
+            //String weatherUrl = "https://api.openweathermap.org/data/2.5/weather?q="+ bookName +"&appid=91666db73c1458dd076532e1e5370e0";
+            //String weatherUrl = "http://api.openweathermap.org/data/2.5/weather?q=London,uk&APPID=b71cd90e0ec4380a3f66cbd9cb88fc41";
             URL requestURL = new URL(builtURI.toString());
 
+            //                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            URL requestURL = new URL(weatherUrl);
             //            String weatherUrl = "https://api.openweathermap.org/data/2.5/weather?q="+bookName+"&appid=91666db73c1458dd9076532e1e5370e0";
             //URL requestURL = new URL(weatherUrl);
             //builtURI.toString());
