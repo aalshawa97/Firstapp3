@@ -71,7 +71,7 @@
             android:name=".HomeActivity"
             android:exported="true" />
         <activity
-            android:name=".CounterActivity"
+            android:name=".books.BooksActivity"
             android:exported="true" />
         <activity
             android:name=".model.Calculator"
@@ -83,7 +83,7 @@
             android:name=".RecyclerActivity"
             android:exported="true" />
         <activity
-            android:name=".books.BooksActivity"
+            android:name=".CounterActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

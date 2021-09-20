@@ -4,7 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.app.AlarmManager
+import android.app.PendingIntent
+import androidx.core.app.AlarmManagerCompat
 import android.provider.AlarmClock
+import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
@@ -49,6 +53,14 @@ class CounterActivity : AppCompatActivity() {
                 Log.d(TAG, token)
                 Toast.makeText(this, token, Toast.LENGTH_SHORT).show()
             })
+    }
+
+    fun setAlarm(view: View) {
+        var alarmManager: AlarmManager = getSystemService(ALARM_SERVICE) as AlarmManager
+        var intent: Intent = Intent(this,HomeActivity::class.java)
+        var pendingIntent:PendingIntent = PendingIntent.getActivity(this,123,intent,Intent.FLAG_ACTIVITY_NEW_TASK)
+        var oneMin: Long = 1 * 60 * 1000;
+        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP,System.currentTimeMillis()+oneMin,oneMin,pendingIntent)
     }
 
   override fun onPause() {

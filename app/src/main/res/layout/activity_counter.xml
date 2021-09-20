@@ -9,6 +9,13 @@
     android:orientation="vertical"
     tools:context=".CounterActivity">
 
+    <Button
+        android:id="@+id/button"
+        android:onClick="setAlarm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="set Alarm" />
+
     <EditText
         android:id="@+id/contactID"
         android:layout_width="match_parent"
