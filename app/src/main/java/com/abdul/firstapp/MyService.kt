@@ -45,6 +45,7 @@ class MyService : Service() {
     }
 
     fun add(a:Int, b:Int):Int{
+        Log.i(TAG,"Quran playing")
         return a+b
     }
 }

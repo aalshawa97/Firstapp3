@@ -1,5 +1,6 @@
 package com.abdul.firstapp.receiver
 
+import android.app.NotificationManager
 import android.content.BroadcastReceiver
 import android.content.Context
 import android.content.Intent
@@ -49,6 +50,7 @@ class AlarmReceiver: BroadcastReceiver() {
      * @param intent The Intent being received.
      */
     override fun onReceive(context: Context, intent: Intent) {
+        //var notificationManager = (NotificationManager)
         val timeInMillis = intent.getLongExtra(Constants.EXTRA_EXACT_ALARM_TIME, 0L)
         when(intent.action){
             Constants.ACTION_SET_EXACT_ALARM->{

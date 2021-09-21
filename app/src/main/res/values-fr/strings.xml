@@ -11,4 +11,7 @@
     <string name="instructions">instructions</string>
     <string name="msg_subscribed">Vous êtes abonné pour recevoir des mises à jour météo!</string>
     <string name="msg_subscribe_failed">Désolé, impossible de s\'abonner aux mises à jour météo. Veuillez vérifier auprès de votre administrateur !</string>
+    <string name="channel_name">démonstration de service</string>
+    <string name="channel_description">chaîne safa
+</string>
 </resources>

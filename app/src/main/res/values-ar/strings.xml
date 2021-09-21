@@ -12,4 +12,6 @@
     <string name="msg_subscribed">أنت مشترك في الحصول على تحديثات الطقس!</string>
     <string name="msg_subscribe_failed">
 آسف ، فشل الاشتراك في تحديثات الطقس. يرجى مراجعة المسؤول الخاص بك!</string>
+    <string name="channel_name">عرض الخدمة</string>
+    <string name="channel_description">قناة صفا</string>
 </resources>

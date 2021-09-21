@@ -72,8 +72,25 @@ class MainActivity : AppCompatActivity() {
             val gallery = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI)
             startActivityForResult(gallery, pickImage)
         }
+        setAlarm()
         Log.d("MainActivity", "Hello World")
     }
+
+    private fun onCheckedChanged(compoundButton: CompoundButton, isChecked:Boolean) {
+        //Declaring two variables.
+        //You can also declare it as global.
+        //but global variable must be initialized before creating toast otherwise you will get NPE and lead to you application crash
+        //Declaring two variables.
+        //You can also declare it as global.
+        //but global variable must be initialized before creating toast otherwise you will get NPE and lead to you application crash
+        val cText = "Setting alarm clock"
+        Toast.makeText(getApplicationContext(), cText, Toast.LENGTH_LONG).show();
+        if(isChecked)
+        {
+
+        }
+    }
+
 
     private fun setAlarm(){
         Calendar.getInstance().apply {
