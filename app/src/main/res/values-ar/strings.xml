@@ -14,4 +14,31 @@
 آسف ، فشل الاشتراك في تحديثات الطقس. يرجى مراجعة المسؤول الخاص بك!</string>
     <string name="channel_name">عرض الخدمة</string>
     <string name="channel_description">قناة صفا</string>
+    <string name="pref_title_social">
+تفعيل التوصيات الاجتماعية</string>
+    <!-- Settings Activity Title -->
+    <string name="title_activity_preferences">التفضيلات</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">رسائل</string>
+    <string name="sync_header">تزامن
+</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">توقيعك</string>
+    <string name="reply_title">إجراء الرد الافتراضي
+</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">مزامنة البريد الإلكتروني بشكل دوري
+</string>
+    <string name="attachment_title">قم بتنزيل المرفقات الواردة
+</string>
+    <string name="attachment_summary_on">تنزيل المرفقات تلقائيًا لرسائل البريد الإلكتروني الواردة
+    </string>
+    <string name="attachment_summary_off">قم بتنزيل المرفقات فقط عند الطلب يدويًا</string>
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">اسم العرض</string>
+    <string name="pref_title_add_friends_to_messages">أبدا</string>
+    <string name="pref_sum_social">توصيات للأشخاص للاتصال بناءً على سجل الطلبات الخاص بك</string>
 </resources>

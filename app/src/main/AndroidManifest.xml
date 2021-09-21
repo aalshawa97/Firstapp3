@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.abdul.firstapp">
 
     <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
@@ -16,23 +17,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Firstapp">
+        <activity
+            android:name=".CounterActivity"
+            android:exported="true"
+            />
+
         <service
             android:name=".ServiceDemoActivity"
             android:enabled="true"
-            android:exported="true"></service>
+            android:exported="true"
+            tools:ignore="Instantiatable" />
         <service
             android:name=".MyService"
             android:enabled="true"
             android:exported="false" />
 
         <activity
-            android:name=".ServiceDemoActivity"
+            android:name=".util.PreferencesActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <meta-data
@@ -71,7 +73,7 @@
         </receiver>
 
         <activity
-            android:name=".CounterActivity"
+            android:name=".MainActivity"
             android:exported="true" />
 
         <service
@@ -101,8 +103,9 @@
             android:name=".RecyclerActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
+            android:name=".ServiceDemoActivity"
+            android:exported="true"
+            android:label="@string/title_activity_preferences">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
