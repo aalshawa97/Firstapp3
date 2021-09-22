@@ -57,6 +57,10 @@
     <string name="notes">notes</string>
     <string name="title">Title</string>
     <string name="text">text</string>
-    <string name="enter_title">enter title</string>
     <string name="enter_notes">enter notes</string>
+    <string name="enter_title">enter title</string>
+    <string name="retreived">Retreived</string>
+    <string name="retreive">Retreive</string>
+    <string name="commit">Commit</string>
+    <string name="remember_password">remember password</string>
 </resources>

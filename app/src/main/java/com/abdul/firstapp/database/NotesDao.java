@@ -32,6 +32,12 @@ public class NotesDao {
         String subtitle = cursor.getString(subTitleColIndex);
         return title + "\n" + subtitle;
     }
+
+    public Cursor getAllRows(){
+        return database.query(FeedEntry.TABLE_NAME, null, null, null, null, null, null);
+
+    }
+
     public void updateRow(){}
     public void deleteRow(){}
 

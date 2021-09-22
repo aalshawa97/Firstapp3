@@ -8,25 +8,37 @@
 
     <EditText
         android:id="@+id/etTitle"
-        android:hint="enter title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="61dp"
         android:ems="10"
+        android:hint="@string/enter_title"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <ListView
+        android:id="@+id/notesListview"
+        android:layout_width="409dp"
+        android:layout_height="300dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCommit" />
+
     <EditText
         android:id="@+id/etNotes"
-        android:hint="enter notes"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="40dp"
         android:ems="10"
+        android:hint="@string/enter_notes"
         android:inputType="textPersonName"
+        android:minHeight="48dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etTitle" />
 
@@ -36,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:onClick="dbHandler"
-        android:text="Commit"
+        android:text="@string/commit"
         app:layout_constraintBaseline_toBaselineOf="@+id/btnRetreive"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -46,7 +58,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="35dp"
         android:layout_marginBottom="11dp"
-        android:text="TextView"
+        android:text="@string/retreived"
         app:layout_constraintBottom_toTopOf="@+id/btnRetreive"
         app:layout_constraintEnd_toEndOf="parent" />
 
@@ -57,7 +69,7 @@
         android:layout_marginStart="29dp"
         android:layout_marginTop="31dp"
         android:onClick="dbHandler"
-        android:text="Retreive"
+        android:text="@string/retreive"
         app:layout_constraintStart_toEndOf="@+id/btnCommit"
         app:layout_constraintTop_toBottomOf="@+id/checkBoxRP" />
 
@@ -67,7 +79,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="46dp"
-        android:text="remember password"
+        android:text="@string/remember_password"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etNotes" />
 </androidx.constraintlayout.widget.ConstraintLayout>
