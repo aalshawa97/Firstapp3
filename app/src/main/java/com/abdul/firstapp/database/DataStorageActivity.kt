@@ -4,11 +4,13 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.EditText
 import com.abdul.firstapp.R
+import android.widget.CheckBox
 
 class DataStorageActivity : AppCompatActivity() {
 
     lateinit var titleEditText: EditText
     lateinit var  notesEditText: EditText
+    lateinit var rpCheckBox: CheckBox
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,6 +18,7 @@ class DataStorageActivity : AppCompatActivity() {
 
         titleEditText = findViewById(R.id.etTitle);
         notesEditText = findViewById(R.id.etNotes)
+        rpCheckBox = findViewById(R.id.checkBoxRP)
     }
 
     override fun onPause() {
@@ -27,6 +30,7 @@ class DataStorageActivity : AppCompatActivity() {
         //get the text/data from those 2 edittexts
         var title = titleEditText.text.toString()
         var notes = notesEditText.text.toString()
+        var isChecked: Boolean = rpCheckBox.isChecked
         //create a file
         var sharedPreferences = getSharedPreferences("preferences.xml", MODE_PRIVATE)
         //open the file in edit mode
@@ -34,6 +38,7 @@ class DataStorageActivity : AppCompatActivity() {
         //write to the file
         editor.putString("mtitle",title)
         editor.putString("mnotes",notes)
+        editor.putBoolean("rpCb",isChecked)
         //save the file
         editor.apply()
     }
