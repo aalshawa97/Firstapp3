@@ -8,10 +8,14 @@ import android.app.PendingIntent
 import android.content.Context
 import android.os.Build
 import com.abdul.firstapp.util.Constants
+import java.util.*
 import java.util.concurrent.atomic.AtomicInteger
 
 class AlarmService : Service() {
     private val alarmManager: AlarmManager? = getSystemService(Context.ALARM_SERVICE) as AlarmManager?
+    val cal_alarm: Calendar = Calendar.getInstance()
+    val cal_now: Calendar = Calendar.getInstance()
+    val dat = Date()
 
     fun setExactAlarm(timeInMillis: Long){
         getPendingIntent(
@@ -28,9 +32,26 @@ class AlarmService : Service() {
         }
     }
 
-    //Every week
-    fun setReptitiveAlarm(timeInMillis: Long){
+    fun setCalendarAlarm(cal_alarm: Calendar){
+        cal_now.setTime(dat)
+        cal_alarm.setTime(dat)
+        cal_alarm.set(Calendar.HOUR_OF_DAY, 10)
+        cal_alarm.set(Calendar.MINUTE, 43)
+        cal_alarm.set(Calendar.SECOND, 0)
 
+        if (cal_alarm.before(cal_now)) {
+            cal_alarm.add(Calendar.DATE, 1)
+        }
+    }
+
+
+    //Every week
+    fun setReptitiveAlarm(timeInMillis: Long, pendingIntent: PendingIntent){
+        setCalendarAlarm(cal_alarm)
+
+        if (alarmManager != null) {
+            alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, System.currentTimeMillis(), cal_alarm.getTimeInMillis() , pendingIntent)
+        }; // Millisec * Second * Minute
     }
 
     private fun setAlarm(timeInMillis: Long, pendingIntent: PendingIntent){
