@@ -14,6 +14,7 @@ import android.widget.*
 import com.google.firebase.ktx.Firebase
 import com.google.firebase.messaging.ktx.messaging
 import java.util.*
+import android.app.NotificationManager as NotificationManager1
 
 class MainActivity : AppCompatActivity() {
     lateinit var etName: EditText   //declartion
@@ -31,6 +32,7 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //var mNotificationManager = (NotificationManager1) getSystemService (NOTIFICATION_SERVICE)
         setContentView(R.layout.activity_main)
         //alarmService = AlarmService()
         /*

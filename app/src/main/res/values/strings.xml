@@ -54,4 +54,9 @@
     <string name="pref_title_display_name">Display name</string>
     <string name="pref_default_display_name">John Smith</string>
     <string name="pref_title_add_friends_to_messages">Never</string>
+    <string name="notes">notes</string>
+    <string name="title">Title</string>
+    <string name="text">text</string>
+    <string name="enter_title">enter title</string>
+    <string name="enter_notes">enter notes</string>
 </resources>
