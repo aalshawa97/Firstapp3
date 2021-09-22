@@ -29,11 +29,20 @@ class DataStorageActivity : AppCompatActivity() {
         tvResult = findViewById(R.id.tvRetreived)
         notesListView = findViewById(R.id.notesListview)
 
-        var adapter: CursorAdapter = SimpleCursorAdapter(this,
+        var adapter: CursorAdapter = SimpleCursorAdapter(
+            this,
+            android.R.layout.simple_list_item_2, //row layout
+            notesDao.allRows,    //data cursor
+            arrayOf(FeedReaderContract.FeedEntry.COLUMN_NAME_TITLE, FeedReaderContract.FeedEntry.COLUMN_NAME_SUBTITLE), //column names
+            intArrayOf(android.R.id.text1, android.R.id.text2)
+        ) //textview id
+        /*
+            var adapter: CursorAdapter = SimpleCursorAdapter(this,
             android.R.layout.simple_list_item_1, //row layout
             notesDao.allRows,    //data cursor
             arrayOf(FeedReaderContract.FeedEntry.COLUMN_NAME_TITLE), //column names
             intArrayOf(android.R.id.text1)) //textview id
+        */
         notesListView.adapter = adapter
     }
 
@@ -43,7 +52,7 @@ class DataStorageActivity : AppCompatActivity() {
     }
 
     fun dbHandler(view: View) {
-        when(view.id){
+        when(view.id) {
             R.id.btnCommit -> {
                 commitRow()
             }
@@ -76,9 +85,9 @@ class DataStorageActivity : AppCompatActivity() {
         //open the file in edit mode
         var editor = sharedPreferences.edit()
         //write to the file
-        editor.putString("mtitle",title)
-        editor.putString("mnotes",notes)
-        editor.putBoolean("rpCb",isChecked)
+        editor.putString("mtitle", title)
+        editor.putString("mnotes", notes)
+        editor.putBoolean("rpCb", isChecked)
         //save the file
         editor.apply()
     }
@@ -92,8 +101,11 @@ class DataStorageActivity : AppCompatActivity() {
         //open the file
         var sharedPreferences = getSharedPreferences("preferences.xml", MODE_PRIVATE)
         //read data from file
-        var title = sharedPreferences.getString("mtitle","")
-        var notes = sharedPreferences.getString("mnotes","")
+        var title = sharedPreferences.getString("mtitle", "")
+        var notes = sharedPreferences.getString("mnotes", "")
+        var isChecked: Boolean = sharedPreferences.getBoolean("rpCb", false)
+        rpCheckBox.isChecked = isChecked
+        
         //write to the edittexts
         titleEditText.setText(title)
         notesEditText.setText(notes)
