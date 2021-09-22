@@ -108,4 +108,8 @@ class CounterActivity : AppCompatActivity() {
     fun returnReply(){
         Log.d(TAG, "End counter activity")
     }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+    }
 }

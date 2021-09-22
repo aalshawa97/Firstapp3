@@ -105,7 +105,7 @@ class DataStorageActivity : AppCompatActivity() {
         var notes = sharedPreferences.getString("mnotes", "")
         var isChecked: Boolean = sharedPreferences.getBoolean("rpCb", false)
         rpCheckBox.isChecked = isChecked
-        
+
         //write to the edittexts
         titleEditText.setText(title)
         notesEditText.setText(notes)

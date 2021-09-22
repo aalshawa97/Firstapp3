@@ -30,7 +30,7 @@
     <string name="instructions">instructions</string>
     <string name="msg_subscribed">You are subscribed to getting weather updates!</string>
     <string name="msg_subscribe_failed">Sorry, failed to subscribe to weather updates. Please check with your administrator!</string>
-     <string name="pref_sum_social">Recommendations for people to contact based on your order history</string>
+    <string name="pref_sum_social">Recommendations for people to contact based on your order history</string>
     <string name="channel_name">service demo</string>
     <string name="channel_description">channel description for service demo</string>
     <string name="pref_title_social">Enable social recommendations</string>
@@ -63,4 +63,18 @@
     <string name="retreive">Retreive</string>
     <string name="commit">Commit</string>
     <string name="remember_password">remember password</string>
+    <string name="title_activity_bottom_nav">BottomNavActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_nav_drawer">NavDrawerActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
 </resources>
