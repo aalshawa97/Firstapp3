@@ -30,6 +30,37 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etTitle" />
 
+    <Button
+        android:id="@+id/btnCommit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:onClick="dbHandler"
+        android:text="Commit"
+        app:layout_constraintBaseline_toBaselineOf="@+id/btnRetreive"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tvRetreived"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginBottom="11dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/btnRetreive"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnRetreive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="31dp"
+        android:onClick="dbHandler"
+        android:text="Retreive"
+        app:layout_constraintStart_toEndOf="@+id/btnCommit"
+        app:layout_constraintTop_toBottomOf="@+id/checkBoxRP" />
+
     <CheckBox
         android:id="@+id/checkBoxRP"
         android:layout_width="wrap_content"
